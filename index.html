@@ -1,99 +1,240 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio – Amani Matar</title>
-  <!-- main styles -->
-  <link rel="stylesheet" href="css/style.css"/>
-  <!-- other styles unchanged -->
-  <link rel="stylesheet" href="css/about.css"/>
-  <link rel="stylesheet" href="css/Footer.css"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amani Website</title>
+  <link rel="icon" type="image/x-icon" href="images/Favicon.png">
+  <!-- your main stylesheet (now imports about.css & Footer.css) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- boxicons for icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Hello, I’m Amani Matar</h1>
+  <!-- Navbar  Section Start -->
+  <header>
+    <a href="index.html" class="logo">Amani</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <div class="bx bx-moon" id="darkmode"></div>
+    </ul>
+  </header>
+  <!-- Navbar Section End -->
+
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="social">
+      <a href="https://github.com/Amanii44?tab=overview"><i class='bx bxl-github'></i></a>
+      <a href="https://www.linkedin.com/in/amani-al-otaibi-a0516519a/"><i class='bx bxl-linkedin'></i></a>
+    </div>
+    <div class="home-img">
+      <img src="images/frontend.png" alt="Amani Matar" loading="lazy">
+    </div>
+    <div class="home-text">
+      <span>Hello, I'm</span>
+      <h1>Amani Matar</h1>
+      <!-- typed.js will inject here -->
       <h2 class="typing"></h2>
       <p id="intro">
-        Business Analyst &amp; Digital Transformation Specialist at the Saudi Food &amp; Drug Authority (SFDA). I work on projects like “GHAD” and “TIQADZ,” gathering requirements and optimizing processes.
+        Business Analyst &amp; Digital Transformation Specialist at the Saudi Food &amp; Drug Authority (SFDA). 
+        I work on projects like “GHAD” and “TIQADZ,” gathering requirements and optimizing processes.
       </p>
       <div class="hero-buttons">
-        <!-- CV download button -->
-        <a href="AMANI_MATAR_CV.pdf" download class="btn btn-cv">
+        <a href="AMANI_MATAR.pdf" download class="btn">
           <span class="icon">⬇️</span> Download CV
         </a>
-        <!-- Full portfolio download button -->
-        <a href="Portfolio_Amani.docx" download class="btn btn-portfolio">
-          <span class="icon">⬇️</span> Download Full Portfolio
+        <a href="Portfolio_Amani.docx" download class="btn">
+          <span class="icon">📄</span> Download Full Portfolio
         </a>
       </div>
     </div>
-  </header>
+  </section>
+  <!-- Home Section End -->
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About Me</h2>
+      <span>Introduction</span>
+    </div>
     <div class="about-container">
       <div class="about-img">
-        <img src="images/frontend.png" alt="Amani Matar" loading="lazy"/>
+        <img src="images/frontend.png" alt="Amani Matar" loading="lazy">
       </div>
       <div class="about-text">
         <p>
-          I’m Amani Matar, AWS Certified Solutions Architect Associate, currently a Business Analysis intern at SFDA. I specialize in aligning business strategy with technology to drive digital transformation and enhance government services.
+          I’m Amani Matar, AWS Certified Solutions Architect Associate, currently a Business Analysis intern at the Saudi Food &amp; Drug Authority. 
+          I specialize in aligning business strategy with technology to drive digital transformation and optimize government services.
         </p>
+        <div class="information">
+          <div class="info-box">
+            <i class='bx bxs-user'></i>
+            <span>Amani Matar</span>
+          </div>
+          <div class="info-box">
+            <i class='bx bxs-phone'></i>
+            <span>+966 53 888 2027</span>
+          </div>
+          <div class="info-box">
+            <i class='bx bxs-envelope'></i>
+            <span>amatarotb@gmail.com</span>
+          </div>
+        </div>
+        <a href="AMANI_MATAR.pdf" download class="btn">
+          <span class="icon">⬇️</span> Download CV
+        </a>
       </div>
     </div>
   </section>
+  <!-- About Section End -->
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
+
+  <!-- Skills Section Start -->
+  <section class="skills" id="skills">
+    <div class="heading">
+      <h2>Skills</h2>
+      <span>My Skills</span>
+    </div>
     <div class="skills-container">
-      <div class="skill-box" data-level="85%">
-        <h3>JavaScript</h3>
-        <div class="skill-bar"><div class="skill-progress"></div></div>
-      </div>
-      <div class="skill-box" data-level="70%">
-        <h3>AWS Solutions Architect</h3>
-        <div class="skill-bar"><div class="skill-progress"></div></div>
-      </div>
-      <div class="skill-box" data-level="80%">
-        <h3>UML &amp; Requirements</h3>
-        <div class="skill-bar"><div class="skill-progress"></div></div>
-      </div>
-      <!-- add more skill-box as needed -->
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <h2>Recent Projects</h2>
-    <div class="projects-wrapper">
-      <div class="project-card">
-        <img src="images/frontend.png" alt="Redesign UI" loading="lazy"/>
-        <div class="info">
-          <h3>UI Redesign</h3>
-          <p>Used HTML5 & CSS3 to improve responsiveness and clarity.</p>
+      <div class="bars">
+        <div class="bars-box">
+          <h3>HTML</h3>
+          <span>94%</span>
+          <div class="light-bar"></div>
+          <div class="percent-bar html-bar"></div>
+        </div>
+        <div class="bars-box">
+          <h3>CSS</h3>
+          <span>84%</span>
+          <div class="light-bar"></div>
+          <div class="percent-bar css-bar"></div>
+        </div>
+        <div class="bars-box">
+          <h3>JavaScript</h3>
+          <span>74%</span>
+          <div class="light-bar"></div>
+          <div class="percent-bar js-bar"></div>
+        </div>
+        <div class="bars-box">
+          <h3>React</h3>
+          <span>80%</span>
+          <div class="light-bar"></div>
+          <div class="percent-bar react-bar"></div>
         </div>
       </div>
-      <!-- hidden extra cards -->
-      <div class="project-card extra" style="display:none;">
-        <img src="images/another-project.png" alt="TIQADZ System" loading="lazy"/>
-        <div class="info">
-          <h3>TIQADZ System</h3>
-          <p>Enhanced reporting and data integration for quality tracking.</p>
-        </div>
+      <div class="skills-img">
+        <img src="images/frontend.png" alt="Skill graphic" loading="lazy">
       </div>
-      <!-- add more project-card.extra as needed -->
     </div>
-    <button id="view-more">View More</button>
   </section>
+  <!-- Skills Section End -->
 
-  <!-- JS Files (unchanged) -->
+
+  <!-- Services Section Start -->
+  <section class="services" id="services">
+    <div class="heading">
+      <h2>Services</h2>
+      <span>Our Services</span>
+    </div>
+    <div class="services-content">
+      <div class="services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Web Development</h3>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="services-box">
+        <i class='bx bx-brush'></i>
+        <h3>UI/UX Design</h3>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+
+  <!-- Portfolio Section Start -->
+  <section class="services" id="portfolio">
+    <div class="heading">
+      <h2>Portfolio</h2>
+      <span>Recent Projects</span>
+    </div>
+    <div class="services-content">
+      <!-- Always visible -->
+      <div class="services-box">
+        <i class='bx bx-file'></i>
+        <h3>Tiqath Improvements (High Priority)</h3>
+        <p>SRS document for improving report and review interfaces for internal users.</p>
+      </div>
+      <div class="services-box">
+        <i class='bx bx-file'></i>
+        <h3>Tiqath Improvements (Low Priority)</h3>
+        <p>Enhancements for user experience and interface efficiency without changing core features.</p>
+      </div>
+      <!-- Hidden until “View More” -->
+      <div class="services-box extra" style="display:none;">
+        <i class='bx bx-file'></i>
+        <h3>Safe Use System Enhancements</h3>
+        <p>SRS for enhancing the evaluation process of safe use for medical devices at healthcare providers.</p>
+      </div>
+    </div>
+
+    <!-- View More button -->
+    <div style="text-align:center; margin-top:20px;">
+      <button id="view-more" class="btn">View More</button>
+    </div>
+
+    <!-- Download Full Portfolio -->
+    <div style="text-align:center; width:100%; margin-top:20px;">
+      <a href="Portfolio_Amani.docx" download class="btn">
+        <span class="icon">📄</span> Download Full Portfolio
+      </a>
+    </div>
+  </section>
+  <!-- Portfolio Section End -->
+
+
+  <!-- Contact Section Start -->
+  <section class="contact" id="contact">
+    <div class="heading">
+      <h2>Contact</h2>
+      <span>Connect With Us</span>
+    </div>
+    <div class="contact-form">
+      <form action="">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+        <input type="button" value="Send" class="contact-button">
+      </form>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <h2>Follow Us</h2>
+    <div class="footer-social">
+      <a href="https://github.com/Amanii44"><i class='bx bxl-github'></i></a>
+      <a href="#"><i class='bx bxl-twitter'></i></a>
+      <a href="https://www.linkedin.com/in/amani-al-otaibi-a0516519a/"><i class='bx bxl-linkedin'></i></a>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; Personal site | Designed in 2023.
+  </div>
+
+  <!-- JS Files: typed.js first, then your custom script -->
   <script src="js/typed.js"></script>
   <script src="js/script.js"></script>
 </body>
