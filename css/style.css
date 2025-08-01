@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 /* logo font */
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url("about.css");
-@import url("Footer.css");
+@import url("css/about.css");
+@import url("css/Footer.css");
 
 /*── Reset & Base ─────────────────────────────────────────────────────*/
 * {
@@ -389,4 +389,5 @@ section {
 #portfolio .services-content .services-box:hover {
   transform: translateY(-5px);
 }
+
 
