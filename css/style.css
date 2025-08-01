@@ -341,3 +341,52 @@ section {
     font-weight: 500;
   }
 }
+
+/* --------------------------------------------------
+   1) إخفاء البطاقات بعد الثانية (البطاقة الثالثة فصاعداً)
+-------------------------------------------------- */
+#portfolio .services-content .services-box:nth-child(n+3) {
+  display: none;
+}
+
+/* --------------------------------------------------
+   2) عرض البطاقات الزائدة عند النقر على "View More"
+      (سوف تضيف JS صنف .show للبطاقات)
+-------------------------------------------------- */
+#portfolio .services-content .services-box.show {
+  display: block;
+}
+
+/* --------------------------------------------------
+   3) إعداد صندوق الوصف ليظهر على hover
+-------------------------------------------------- */
+#portfolio .services-content .services-box {
+  position: relative;            /* لوضع الوصف مطلقاً داخل الصندوق */
+  overflow: hidden;
+}
+#portfolio .services-content .services-box p {
+  display: none;                 /* نخفي الوصف افتراضياً */
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+#portfolio .services-content .services-box:hover p {
+  display: block;                /* نظهر الوصف عند التمرير */
+}
+
+/* --------------------------------------------------
+   4) (اختياري) تحسين انتقالات العرض
+-------------------------------------------------- */
+#portfolio .services-content .services-box {
+  transition: transform 0.3s ease;
+}
+#portfolio .services-content .services-box:hover {
+  transform: translateY(-5px);
+}
+
