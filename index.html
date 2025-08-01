@@ -1,100 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amani Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/about.css" />
-  <link rel="stylesheet" href="css/Footer.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amani Matar | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/Favicon.png" type="image/png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/Footer.css">
+
+  <!-- Boxicons (for download icon) -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-  <header>
-    <a href="#home" class="logo">Amani</a>
-    <div class="bx bx-menu" id="menu-icon"></div>
-    <ul class="navbar">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <div class="bx bx-moon" id="darkmode"></div>
-    </ul>
-  </header>
 
-  <section class="home reveal" id="home">
-    <div class="social">
-      <a href="https://github.com/Amanii44"><i class="bx bxl-github"></i></a>
-      <a href="https://www.linkedin.com/in/amani-al-otaibi-a0516519a/"><i class="bx bxl-linkedin"></i></a>
-    </div>
-    <div class="home-img">
-      <img src="images/frontend.png" alt="Amani" />
-    </div>
+  <!-- 1. HOME -->
+  <section id="home" class="home">
     <div class="home-text">
-      <span>Hello, I'm</span>
       <h1>Amani Matar</h1>
-      <h2><span class="typing"></span></h2>
-      <p>Certified Business Analyst & Digital Transformation Specialist trained at SFDA. Passionate about improving public service systems.</p>
-      <a href="Portfolio_Amani.pdf" class="btn">Download Portfolio</a>
+      <p>
+        Digital Transformation Specialist &amp; Business Analyst at SFDA. Skilled in
+        requirements gathering, SRS/BRD documentation, and driving data-driven automation
+        projects.
+      </p>
+      <div class="typing"></div>
+    </div>
+    <div class="home-image">
+      <img src="images/frontend.png"
+           alt="Illustration of Front-End Development">
     </div>
   </section>
 
-  <section class="about reveal" id="about">
-    <div class="heading">
-      <h2>About Me</h2>
-      <span>Introduction</span>
-    </div>
-    <div class="about-container">
-      <div class="about-img">
-        <img src="images/frontend.png" alt="About Amani" />
-      </div>
-      <div class="about-text">
-        <p>IT graduate with hands-on Tamheer training at SFDA as Digital Transformation Specialist. Skilled in preparing SRS and BRD, UML diagrams, and leveraging cloud (AWS) to optimize business processes.</p>
-        <div class="information">
-          <div class="info-box"><i class="bx bxs-user"></i><span>Amani Matar</span></div>
-          <div class="info-box"><i class="bx bxs-phone"></i><span>+966 53 888 2027</span></div>
-          <div class="info-box"><i class="bx bxs-envelope"></i><span>amatarotb@gmail.com</span></div>
-        </div>
-        <a href="Portfolio_Amani.pdf" class="btn">Download Portfolio</a>
-      </div>
-    </div>
+  <!-- 2. ABOUT ME -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Digital Transformation Specialist currently undergoing Tamheer training at
+      the Saudi Food and Drug Authority (SFDA). I specialize in business analysis,
+      requirement elicitation, and digital process automation to enhance operational
+      efficiency.
+    </p>
   </section>
 
-  <section class="skills reveal" id="skills">
-    <div class="heading"><h2>Skills</h2><span>Technical & Analytical</span></div>
+  <!-- 3. SKILLS -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
     <div class="skills-container">
-      <div class="bars">
-        <div class="bars-box"><h3>HTML</h3><span>94%</span><div class="light-bar"></div><div class="percent-bar html-bar"></div></div>
-        <div class="bars-box"><h3>CSS</h3><span>84%</span><div class="light-bar"></div><div class="percent-bar css-bar"></div></div>
-        <div class="bars-box"><h3>JavaScript</h3><span>74%</span><div class="light-bar"></div><div class="percent-bar js-bar"></div></div>
-        <div class="bars-box"><h3>Business Analysis</h3><span>85%</span><div class="light-bar"></div><div class="percent-bar ba-bar"></div></div>
-        <div class="bars-box"><h3>Cloud (AWS)</h3><span>70%</span><div class="light-bar"></div><div class="percent-bar aws-bar"></div></div>
+      <div class="skill-bar">
+        <h3>HTML</h3><span>90%</span>
+        <div class="bar-background">
+          <div class="bar-fill" data-percentage="90%"></div>
+        </div>
       </div>
-      <div class="skills-img"><img src="images/frontend.png" alt="skill" /></div>
+      <div class="skill-bar">
+        <h3>CSS</h3><span>85%</span>
+        <div class="bar-background">
+          <div class="bar-fill" data-percentage="85%"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <h3>JavaScript</h3><span>75%</span>
+        <div class="bar-background">
+          <div class="bar-fill" data-percentage="75%"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <h3>AWS</h3><span>70%</span>
+        <div class="bar-background">
+          <div class="bar-fill" data-percentage="70%"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <h3>Business Analysis</h3><span>80%</span>
+        <div class="bar-background">
+          <div class="bar-fill" data-percentage="80%"></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="projects reveal" id="projects">
-    <div class="heading"><h2>Recent Projects</h2><span>Portfolio Highlights</span></div>
+  <!-- 4. PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <h2>Recent Projects</h2>
     <div class="projects-container">
-      <!-- initial projects -->
-      <div class="project-card"><h3>تحسينات نظام تيقظ (عالية الأولوية)</h3><div class="project-info"><p>توثيق متطلبات التحسين لنظام تيقظ، فيما يتعلق بخصائص النظام وصفحات البلاغ والمراجعة الخاصة بالمستخدم الداخلي.</p></div></div>
-      <div class="project-card"><h3>تحسينات نظام تيقظ (منخفضة الأولوية)</h3><div class="project-info"><p>توثيق التحسينات منخفضة الأولوية لتحسين تجربة المستخدم دون التأثير على الوظائف.</p></div></div>
-      <div class="project-card"><h3>تحسينات نظام الاستخدام الآمن</h3><div class="project-info"><p>رفع فاعلية تقييم الاستخدام الآمن للأجهزة الطبية عبر وثيقة SRS متكاملة.</p></div></div>
+
+      <!-- Visible cards -->
+      <div class="project-card">
+        <img src="images/SFDA-Pay.png" alt="SFDA Pay">
+        <div class="card-info">
+          <h3>SFDA Pay</h3>
+          <p>Payment gateway for SFDA services.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/SafeUse.png" alt="SafeUse">
+        <div class="card-info">
+          <h3>SafeUse</h3>
+          <p>Adverse reporting platform.</p>
+        </div>
+      </div>
+
+      <!-- Hidden extra projects (will be toggled) -->
+      <div class="project-card extra-project">
+        <img src="images/project3.png" alt="Project 3">
+        <div class="card-info">
+          <h3>Project 3</h3>
+          <p>Description of Project 3.</p>
+        </div>
+      </div>
+      <div class="project-card extra-project">
+        <img src="images/project4.png" alt="Project 4">
+        <div class="card-info">
+          <h3>Project 4</h3>
+          <p>Description of Project 4.</p>
+        </div>
+      </div>
+
     </div>
-    <div class="more-projects"><button class="btn" id="loadMore">عرض المزيد</button></div>
-    <div class="download-portfolio"><a href="Portfolio_Amani.pdf" class="btn">Download Full Portfolio</a></div>
+
+    <!-- 7. Show More button -->
+    <button id="show-more" class="btn">Show More</button>
+
+    <!-- 8. Download full portfolio -->
+    <div class="download-full">
+      <a href="Portfolio_Amani.pdf" download>
+        <i class='bx bx-download'></i>
+        Download Full Portfolio
+      </a>
+    </div>
   </section>
 
-  <footer>
-    <div class="footer-content"><h3>Amani Portfolio</h3><p>Built with passion and precision to reflect my growth and dedication in digital transformation and business analysis.</p></div>
-    <div class="footer-bottom"><p>© 2025 Amani Matar | All rights reserved.</p></div>
+  <!-- 9. FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Amani Matar. All rights reserved.</p>
   </footer>
 
+  <!-- 2. & 5. JS FILES -->
   <script src="js/typed.js"></script>
-  <script>var typed=new Typed(".typing",{strings:["Digital Transformation Specialist","Business Analyst","IT Graduate"],typeSpeed:60,backSpeed:40,startDelay:500,backDelay:1000,smartBackspace:true,showCursor:true,cursorChar:"|",loop:true});</script>
   <script src="js/script.js"></script>
+
 </body>
 </html>
