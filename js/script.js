@@ -43,3 +43,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	var typed = new Typed('.typing', options);
   });
 	//
+document.getElementById('view-more').addEventListener('click', function() {
+  document.querySelectorAll('#portfolio .services-content .services-box:nth-child(n+3)')
+    .forEach(el => el.classList.add('show'));
+  this.style.display = 'none'; // نخبّي الزر بعد النقر
+});
+
