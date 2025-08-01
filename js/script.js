@@ -42,3 +42,45 @@ moreBtn.addEventListener('click', () => {
   });
   moreBtn.style.display = 'none';
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Typed.js initialization
+  new Typed('.typing', {
+    strings: [
+      "Digital Transformation Specialist",
+      "Business Analyst",
+      "AWS Certified Solutions Architect"
+    ],
+    typeSpeed: 50,
+    backSpeed: 25,
+    loop: true
+  });
+
+  // 5. Animate skill bars when in view
+  const bars = document.querySelectorAll('.bar-fill');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        bar.style.width = bar.dataset.percentage;
+        observer.unobserve(bar);
+      }
+    });
+  }, { threshold: 0.6 });
+  bars.forEach(bar => observer.observe(bar));
+
+  // 7. Show/Hide extra projects
+  const btn = document.getElementById('show-more');
+  const extras = document.querySelectorAll('.extra-project');
+  let expanded = false;
+  btn.addEventListener('click', () => {
+    expanded = !expanded;
+    extras.forEach(card => {
+      card.style.display = expanded ? 'block' : 'none';
+    });
+    btn.textContent = expanded ? 'Show Less' : 'Show More';
+  });
+
+});
+
